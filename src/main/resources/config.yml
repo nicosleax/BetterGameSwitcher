@@ -1,0 +1,19 @@
+## Chat Prefix ##
+Prefix: "&5Phoenix Interactive Studios &8&l| "
+
+## Survival Messanges ##
+Already_Survival: "&7You are already in &asurvival &7mode."
+Set_Survival: "&7Your gamemode is now &asurvival &7mode."
+
+## Creative Messanges ##
+Already_Creative: "&7You are already in &acreative &7mode."
+Set_Creative: "&7Your gamemode is now &acreative &7mode."
+
+## Adventure Messanges ##
+Already_Adventure: "&7You are already in &aadventure &7mode."
+Set_Adventure: "&7Your gamemode is now &aadventure &7mode."
+
+## Spectator Messanges ##
+Already_Spectator: "&7You are already in &aspectator &7mode."
+Set_Spectator: "&7Your gamemode is now &7spectator &7mode."
+
