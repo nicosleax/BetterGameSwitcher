@@ -1,5 +1,24 @@
 main: de.phoenix_interactive_studios.spigot.Main
-name: SimpleOverlay
+name: BetterGameSwitcher
 version: '1.0.0'
 authors:
   - nicosleax
+commands:
+  gms:
+    aliases:
+      - gm0
+      - gamemode survival
+  gmc:
+    aliases:
+      - gm1
+      - gamemode creative
+
+  gma:
+    aliases:
+      - gm2
+      - gamemode adventure
+
+  gmsp:
+    aliases:
+      - gm3
+      - gamemode spectator
