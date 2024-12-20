@@ -3,7 +3,6 @@ package de.phoenix_interactive_studios.spigot;
 import de.phoenix_interactive_studios.spigot.commands.Gamemode_Adventure;
 import de.phoenix_interactive_studios.spigot.commands.Gamemode_Creative;
 import de.phoenix_interactive_studios.spigot.commands.Gamemode_Spectator;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import de.phoenix_interactive_studios.spigot.commands.Gamemode_Survival;
 

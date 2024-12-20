@@ -1,6 +1,7 @@
 package de.phoenix_interactive_studios.spigot.commands;
 
 import de.phoenix_interactive_studios.spigot.Main;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,10 +23,10 @@ public class Gamemode_Creative implements CommandExecutor {
             Player pl = (Player) sender;
 
             if (pl.getGameMode() == GameMode.CREATIVE) {
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Creative"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Creative")));
             } else {
                 pl.setGameMode(GameMode.CREATIVE);
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Creative"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Creative")));
             }
         }
         return false;

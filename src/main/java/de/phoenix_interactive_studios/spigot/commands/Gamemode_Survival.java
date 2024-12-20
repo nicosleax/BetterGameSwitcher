@@ -1,6 +1,7 @@
 package de.phoenix_interactive_studios.spigot.commands;
 
 import de.phoenix_interactive_studios.spigot.Main;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -25,10 +26,10 @@ public class Gamemode_Survival implements CommandExecutor {
             Player pl = (Player) sender;
 
             if (pl.getGameMode() == GameMode.SURVIVAL) {
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Survival"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Survival")));
             } else {
                 pl.setGameMode(GameMode.SURVIVAL);
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Survival"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Survival")));
             }
         }
         return false;

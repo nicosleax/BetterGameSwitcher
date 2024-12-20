@@ -1,6 +1,7 @@
 package de.phoenix_interactive_studios.spigot.commands;
 
 import de.phoenix_interactive_studios.spigot.Main;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,10 +23,10 @@ public class Gamemode_Spectator implements CommandExecutor {
             Player pl = (Player) sender;
 
             if (pl.getGameMode() == GameMode.SPECTATOR) {
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Spectator"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Already_Spectator")));
             } else {
                 pl.setGameMode(GameMode.SPECTATOR);
-                pl.sendMessage(main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Spectator"));
+                pl.sendMessage(ChatColor.translateAlternateColorCodes('&',main.getConfig().getString("Prefix") + main.getConfig().getString("Set_Spectator")));
             }
         }
         return false;
